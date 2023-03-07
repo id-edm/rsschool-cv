@@ -1,11 +1,14 @@
 # Ivan Derevjannykh
 
+![myphoto]()
+
 ## Contact
 
 - Discord: **id-edm**
 - Email: **ivandubochit@gmail.com**
 - Phone: **+79199177997**
 - Telegram: **@edm_ivan**
+- Instagram: [i.derevjannyh](www.instagram.com/i.derevjannyh "Описание")
 
 ## About Me
 
