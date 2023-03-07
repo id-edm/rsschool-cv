@@ -1,6 +1,6 @@
 # Ivan Derevjannykh
 
-![myphoto](https://github.com/id-edm/rsschool-cv/blob/gh-pages/assets/myphoto.jpg?raw=true)
+![myphoto](https://github.com/id-edm/rsschool-cv/blob/gh-pages/assets/my-photo.jpg?raw=true)
 
 ## Contact
 
