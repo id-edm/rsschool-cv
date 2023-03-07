@@ -16,3 +16,20 @@
 _1.Diploma of secondary vocational education"Sarapul College of Mechanical Engineering and Information Technology" (2011 - 2014)Qualification - technician_
 
 _2.Bachelor's degree"Izhevsk State Technical University named after M.T. Kalashnikov" (2017 -2020)Qualification - bachelor_
+
+## Languages
+
+English: **_Basic(A1)_**
+Russian: **_Native_**
+
+## Skils
+
+***At the moment, all my skills are in the learning process.***
+
+## Code examples
+
+```javascript
+function multiply(a, b) {
+  return a * b;
+}
+```
