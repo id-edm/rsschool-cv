@@ -167,3 +167,12 @@ li {
     letter-spacing: 1.15px;
     font-weight: 500;
 }
+
+/*контакты*/
+.my__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    border-bottom: 2px solid black;
+}
