@@ -71,3 +71,33 @@ li {
     font-weight: bold;
     text-decoration: none;
 }
+
+/*навбар*/
+.navbar ul li {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__info {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #babbc4;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.navbar__item {
+    position: relative;
+    transition: transform 0.1s;
+}
+
+.navbar__item:hover {
+    transform:scale(1.1);
+    color: aqua;
+}
