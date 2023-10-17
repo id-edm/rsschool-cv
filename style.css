@@ -278,3 +278,62 @@ li {
     padding: 10px 20px;
     
 }
+
+/*бургер меню*/
+.burger__btn {
+    position: relative;
+    display: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+    width: 45px;
+    height: 20px;
+    background-color: transparent;
+  }
+  .burger__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f89e29;
+  }
+  
+  .burger__btn::before,
+  .burger__btn::after {
+    content: "";
+    position: absolute;
+    background-color: #f89e29;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 2px;
+    transition: transform 0.25s ease-in-out, top 0.25s ease-in-out, bottom 0.25s ease-in-out;
+  }
+  
+  .burger__btn::before {
+    top: 0;
+  }
+  
+  .burger__btn::after {
+    bottom: 0;
+  }
+  
+  .burger--transform .burger__line {
+    opacity: 0;
+  }
+  
+  .burger--transform::before {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .burger--transform::after {
+    transform: rotate(-45deg);
+    top: 50%;
+    bottom: auto;
+  }
+  
+  .scroll--stop {
+    overflow: hidden;
+  }
