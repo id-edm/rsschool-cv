@@ -225,3 +225,16 @@ li {
 .my__contact_list-inner:hover {
     transform: scale(1.03);
 } 
+
+/*скилы*/
+.skils ul {
+    padding-right: 30px;
+}
+
+.skils__img {
+    vertical-align: middle;
+}
+
+.skils__list {
+    padding: 5px 5px;
+}
