@@ -260,3 +260,21 @@ li {
     text-align: right;
     padding: 5px;
 }
+
+/*футер*/
+.footer {
+    display: flex;
+    justify-content:space-between;
+    display: flex;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: rgb(68, 95, 114);
+    
+}
+
+.footer__ico {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
