@@ -238,3 +238,25 @@ li {
 .skils__list {
     padding: 5px 5px;
 }
+
+/*пример кода*/
+.code {
+    padding-right: 30px;
+    border-bottom: none;
+}
+
+/*знание языков*/
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 20px;
+    border-bottom: 2px solid black;
+}
+
+.education_inner {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 5px;
+}
