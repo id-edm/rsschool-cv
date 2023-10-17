@@ -176,3 +176,11 @@ li {
     padding: 20px 20px;
     border-bottom: 2px solid black;
 }
+
+/*образование*/
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px; 
+    border-bottom: 2px solid black;   
+}
