@@ -17,3 +17,35 @@
     font-family: Ubuntu-Bold;
     src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: Ubuntu-Regular;
+    font-size: 22px;
+    margin: 120px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 100%;
+    box-shadow: 10px 20px 14px 3px rgb(0 0 0 / 50%);
+    border: 7px solid rgb(223, 155, 30);;
+}
