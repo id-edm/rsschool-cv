@@ -337,3 +337,39 @@ li {
   .scroll--stop {
     overflow: hidden;
   }
+
+  /*медиа запросы*/  
+@media (max-width: 1040px) {
+    .navbar__info {
+      background-color: rgb(68, 95, 114);
+      flex-direction: column;
+      gap: 10px 0;
+      padding: 10px 0;
+      position: fixed;
+      right: 0;
+      top: 215px;
+      z-index: 100;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    .navbar__info.burger--open {
+      transform: translateX(-68%);
+    }
+  
+    .burger__btn {
+      display: flex;
+    }
+
+    .navbar__item {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }
