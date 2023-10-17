@@ -196,3 +196,32 @@ li {
     justify-content: right;
     margin-bottom: 10px;
 }
+
+/*иконки контактов*/
+.image_contact {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.my__contact_list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 350px;
+}
+
+.my__contact_list-inner{
+    position: relative;
+    transition: transform 0.15s;
+}
+
+.my__contact_list-inner:hover {
+    transform: scale(1.03);
+} 
