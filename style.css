@@ -184,3 +184,15 @@ li {
     padding: 20px 20px; 
     border-bottom: 2px solid black;   
 }
+
+.left__h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+.right__h2 {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+}
