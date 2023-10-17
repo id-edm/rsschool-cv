@@ -1,21 +1,23 @@
 
-##[rsschool-cv](https://id-edm.github.io/rsschool-cv/ "HTML and CSS CV")
-___
-##Ivan Derevjannykh
-____
-###Junior Frontend Developer
-___
-####About me.
+## Ivan Derevjannykh
+***
+
+### Junior Frontend Developer
+***
+
+#### About me.
 My name is Ivan, I'm 30 years old. At the moment I work as an adjuster of electroerosive equipment. I know very little about front-end development. There is a great desire to learn and work. Studying is not easy, but I will not give up.
-___
-####Contact.
+***
+
+#### Contact.
 * **Telegram:** [+79199177997]("Telegram")
 * **Gmail:** [ivandubochit@gmail.com](mailto:ivandubochit@gmail.com "Описание")
 * **Discord:** [@id-edm]("Описание")
 * **Instagram:** [Instagram](https://www.instagram.com/i.derevjannyh "Instagram")
-____
+***
 
-####Education.
+
+#### Education.
 Diploma of secondary vocational education”Sarapul College of Mechanical Engineering and Information Technology” (2011 - 2014)Qualification - technician.
 
  
@@ -23,9 +25,9 @@ Bachelor’s degree”Izhevsk State Technical University named after M.T. Kalash
 
  
 At the present time I study RsSchool.
-____
+***
 
-####Skills.
+#### Skills.
 * HTML 5
 * CSS 3
 * Sass
@@ -33,16 +35,17 @@ ____
 * GitHub
 * VSCode
 * JavaScript basic
-____
+***
 
-####Languages.
+#### Languages.
 * Russian: Native
 * English: Basic(A1)
-____
+***
 
-####Code example.
+#### Code example.
 
     function multiply(a, b) {
-     return a * b;
- }
+       return a * b;
+    }
+ ***
 
