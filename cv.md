@@ -24,3 +24,25 @@ Bachelor’s degree”Izhevsk State Technical University named after M.T. Kalash
  
 At the present time I study RsSchool.
 ____
+
+####Skills.
+* HTML 5
+* CSS 3
+* Sass
+* Git
+* GitHub
+* VSCode
+* JavaScript basic
+____
+
+####Languages.
+* Russian: Native
+* English: Basic(A1)
+____
+
+####Code example.
+
+    function multiply(a, b) {
+     return a * b;
+ }
+
