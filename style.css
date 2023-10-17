@@ -49,3 +49,25 @@ li {
     box-shadow: 10px 20px 14px 3px rgb(0 0 0 / 50%);
     border: 7px solid rgb(223, 155, 30);;
 }
+
+/*хедер*/
+.header {
+    justify-content: space-between;
+    padding: 20px 20px;
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(68, 95, 114);
+    color: #babbc4;
+    font-size: 40px;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: rgb(223, 155, 30);
+    font-size: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
