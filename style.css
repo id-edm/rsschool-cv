@@ -47,6 +47,8 @@ li {
     margin: 0 auto;
     max-width: 100%;
     box-shadow: 10px 20px 14px 3px rgb(0 0 0 / 50%);
+    font-size: 20px;
+    color: rgb(37, 36, 36);
 }
 
 /*хедер*/
