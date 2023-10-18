@@ -44,10 +44,8 @@ li {
 .container {
     width: 1024px;
     margin: 0 auto;
-    justify-content: center;
     max-width: 100%;
     box-shadow: 10px 20px 14px 3px rgb(0 0 0 / 50%);
-    border: 7px solid rgb(223, 155, 30);;
 }
 
 /*хедер*/
@@ -155,10 +153,8 @@ li {
     filter: grayscale(20%);
     border-radius: 50%;
     display: flex;
-    width: 300px;
-    border-style: solid;
-    border-width: 8px;
-    border-color: rgb(223, 155, 30);
+    max-width: 100%;
+    height: auto;
 }
 
 .about__me {
