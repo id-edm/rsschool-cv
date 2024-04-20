@@ -75,7 +75,7 @@ li {
 
 /*навбар*/
 .navbar ul li {
-    padding: 10px 10px 10px 10px;
+    margin: 10px 10px;
     display: flex;
     align-items: center;
 }
@@ -89,18 +89,38 @@ li {
     font-weight: 700;
     color: #babbc4;
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 10px;
 }
 
 .navbar__item {
     position: relative;
-    transition: transform 0.1s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.navbar__item:hover {
-    transform:scale(1.1);
-    color: aqua;
+.navbar__item:after {
+	content: "";
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    right: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: 0.6s;
+}
+
+.navbar__item:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    background-color: rgb(223, 155, 30);
+    transition: 0.6s;
 }
 
 /*информация и профиль*/
