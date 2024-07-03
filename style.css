@@ -92,9 +92,12 @@ li {
     position: relative;
 }
 
-.navbar__item:hover {
-    color: rgb(204, 190, 92);
-}
+/* не отрабатывал на тач устройствах */
+@media (any-hover: hover) {
+    .navbar__item:hover {
+        color: rgb(204, 190, 92);
+    }
+  }
 
 .underline::after {
     content: "";
