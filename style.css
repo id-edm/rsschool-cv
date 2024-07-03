@@ -73,33 +73,50 @@ li {
 
 /*навбар*/
 .navbar ul li {
-    padding: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
 }
 
 .navbar__info {
     display: flex;
+    gap: 30px;
 }
 
 .navbar a {
     font-size: 18px;
     font-weight: 700;
-    color: #babbc4;
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 10px;
 }
 
 .navbar__item {
     position: relative;
-    transition: transform 0.1s;
 }
 
 .navbar__item:hover {
-    transform:scale(1.1);
-    color: aqua;
+    color: rgb(204, 190, 92);
 }
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* отступ снизу */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    background: rgb(204, 190, 92);
+    height: 3px;
+    transition: 0.35s, opacity 0.35s;
+    border-radius: 100px;
+    opacity: 0;
+  }
+  
+  /* анимация подчеркивания */
+  .underline:hover::after {
+    width: 100%;
+    opacity: 1;
+  } 
 
 /*информация и профиль*/
 .information {
@@ -298,28 +315,28 @@ li {
     top: 50%;
     left: 0;
     width: 100%;
-    height: 2px;
-    background-color: #f89e29;
+    height: 4px;
+    background-color: rgb(204, 190, 92);
   }
   
   .burger__btn::before,
   .burger__btn::after {
     content: "";
     position: absolute;
-    background-color: #f89e29;
+    background-color: rgb(204, 190, 92);
     left: 0;
     transform: translateY(50%);
     width: 100%;
-    height: 2px;
+    height: 4px;
     transition: transform 0.25s ease-in-out, top 0.25s ease-in-out, bottom 0.25s ease-in-out;
   }
   
   .burger__btn::before {
-    top: 0;
+    top: -2px;
   }
   
   .burger__btn::after {
-    bottom: 0;
+    bottom: -2px;
   }
   
   .burger--transform .burger__line {
@@ -346,7 +363,7 @@ li {
       background-color: rgb(68, 95, 114);
       flex-direction: column;
       gap: 10px 0;
-      padding: 10px 0;
+      padding: 20px 20px;
       position: fixed;
       right: 0;
       top: 90px;
@@ -365,6 +382,7 @@ li {
 
     .navbar__item {
       margin: 0 auto;
+      padding: 5px 0;
     }
 
   }
