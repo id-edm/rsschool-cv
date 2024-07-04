@@ -153,7 +153,6 @@ li {
 /*информация и профиль*/
 .information {
   display: flex;
-  width: 65%;
   flex-direction: column;
   background-color: #488da9;
 }
@@ -430,14 +429,22 @@ li {
     align-items: center;
   }
 
+  .aside {
+    padding-top: 0;
+  }
+
+  .main__container {
+    flex-direction: column-reverse;
+  }
+
+  .information__container {
+    padding-bottom: 0;
+  }
+  
   .my__photo {
     justify-content: center;
   }
 
-  .photo {
-    max-width: 85%;
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 414px) {
