@@ -93,17 +93,11 @@ li {
     position: relative;
 }
 
-/* не отрабатывал на тач устройствах */
-@media (any-hover: hover) {
-    .navbar__item:hover {
-        color: rgb(204, 190, 92);
-    }
-  }
-
 .underline::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* отступ снизу */
+    bottom: -5px;
+    /* отступ снизу */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -114,25 +108,34 @@ li {
     transition: 0.35s, opacity 0.35s;
     border-radius: 100px;
     opacity: 0;
-  }
-  
-  /* анимация подчеркивания */
-  .underline:hover::after {
+}
+
+/* анимация подчеркивания */
+.underline:hover::after {
     width: 100%;
     opacity: 1;
-  }
-  
-  @media (hover: hover) {
-    .underline::after {
-      width: 0;
-      opacity: 0;
-    }
-  
+}
+
+@media (hover: hover) and (pointer: fine) {
     .underline:hover::after {
-      width: 100%;
-      opacity: 1;
+        width: 100%;
+        opacity: 1;
     }
-  }
+
+    .navbar__item:hover {
+        color: rgb(204, 190, 92);
+    }
+}
+
+@media (hover: none) {
+    .underline::after {
+        display: none;
+    }
+    
+    .navbar__item:active {
+        color: rgb(204, 190, 92);
+    }
+}
 
 /*информация и профиль*/
 .information {
