@@ -98,7 +98,6 @@ li {
 }
 
 .aside {
-  width: 30%;
   display: flex;
   padding: 30px;
   padding-right: 0;
@@ -154,14 +153,14 @@ li {
 .information {
   display: flex;
   flex-direction: column;
-  background-color: #488da9;
+  padding: 30px;
+  gap: 30px;
 }
 
 .information__container {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  gap: 30px;
+  background-color: #488da9;
 }
 
 .profile {
@@ -194,9 +193,9 @@ li {
 
 .my__photo {
   display: flex;
-  justify-content: flex-end;
+  display: block;
   overflow: visible;
-  width: 50%
+  width: 70%
 }
 
 .photo {
@@ -300,7 +299,6 @@ li {
 }
 
 .skils__img {
-  vertical-align: middle;
   display: block;
 }
 
@@ -431,10 +429,16 @@ li {
 
   .aside {
     padding-top: 0;
+    padding-right: 30px;
+    width:100% ;
   }
 
   .main__container {
     flex-direction: column-reverse;
+  }
+
+  .aside__container {
+    display: flex;
   }
 
   .information__container {
