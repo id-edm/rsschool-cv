@@ -349,8 +349,15 @@ li {
 .project__link {
   background-color: #ccbe5c;
   padding: 10px;
+  font-weight: 500;
   border-radius: 10px;
   margin-top: auto;
+  transition: transform 0.15s;
+}
+
+.project__link:hover {
+  color: #488da9;
+  background-color: #eef1f3;
 }
 
 .project__link::after {
