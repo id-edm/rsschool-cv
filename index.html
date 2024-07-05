@@ -7,6 +7,7 @@
   <title>CV</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/libs/highlight/styles/base16/nova.min.css">
 </head>
 
 <body>
@@ -162,17 +163,14 @@
           </div>
           <div class="code">
             <h2 class="title">Code example</h2>
-            <pre><code>
-                            
-        function multiply(a, b) {
-  
-          return a * b;
-        }
-            </code></pre>
+            <pre><code class="javascript">function getRandomQuery() {
+  const randomQueries = ['nature', 'city', 'technology', 'abstract'];
+  const randomIndex = Math.floor(Math.random() * randomQueries.length);
+    return randomQueries[randomIndex];
+} </code></pre>
           </div>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
@@ -186,6 +184,8 @@
     </footer>
   </div>
   <script src="./main.js"></script>
+  <script src="./assets/libs/highlight/highlight.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>

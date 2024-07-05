@@ -390,6 +390,10 @@ li {
   overflow: hidden;
 }
 
+.javascript {
+  font-size: 16px;
+}
+
 /*медиа запросы*/
 @media (max-width: 1024px) {
   .navbar__info {
