@@ -18,6 +18,11 @@
   src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -354,6 +359,11 @@ li {
   inset: 0;
 }
 
+.image {
+  display: block;
+  max-width: 350px;
+}
+
 /*футер*/
 .footer {
   display: flex;
@@ -432,8 +442,15 @@ li {
   overflow: hidden;
 }
 
-.javascript {
-  font-size: 16px;
+.pre {
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+
+.code {
+  font-size: 15px;
+  width: 100%;;
 }
 
 /*медиа запросы*/
@@ -495,6 +512,20 @@ li {
     justify-content: center;
   }
 
+  .project {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 645px) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 414px) {
