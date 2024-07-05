@@ -18,6 +18,11 @@
   src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,11 +99,10 @@ li {
 
 .main__container {
   display: flex;
-  gap:30px
+  gap: 30px
 }
 
 .aside {
-  width: 30%;
   display: flex;
   padding: 30px;
   padding-right: 0;
@@ -154,14 +158,14 @@ li {
 .information {
   display: flex;
   flex-direction: column;
-  background-color: #488da9;
+  padding: 30px;
+  gap: 30px;
 }
 
 .information__container {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  gap: 30px;
+  background-color: #488da9;
 }
 
 .profile {
@@ -194,9 +198,9 @@ li {
 
 .my__photo {
   display: flex;
-  justify-content: flex-end;
+  display: block;
   overflow: visible;
-  width: 50%
+  width: 70%
 }
 
 .photo {
@@ -214,7 +218,8 @@ li {
 }
 
 .about__me-text {
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.3;
   margin-bottom: 12px;
 }
 
@@ -237,6 +242,7 @@ li {
 }
 
 .education_inner {
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
@@ -287,6 +293,7 @@ li {
 
 /*скилы*/
 .skils__lists {
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   padding-top: 8px;
@@ -300,18 +307,68 @@ li {
 }
 
 .skils__img {
-  vertical-align: middle;
   display: block;
 }
-
-/*пример кода*/
-
 
 /*знание языков*/
 .lang {
   display: flex;
   flex-direction: column;
   line-height: 1.5
+}
+
+.text__contact {
+  font-size: 18px;
+}
+
+/*проекты*/
+.project {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects__image {
+  position: relative;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+}
+
+.project__link {
+  background-color: #ccbe5c;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: auto;
+  transition: transform 0.15s;
+}
+
+.project__link:hover {
+  color: #488da9;
+  background-color: #eef1f3;
+}
+
+.project__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  display: block;
+  max-width: 350px;
 }
 
 /*футер*/
@@ -392,6 +449,17 @@ li {
   overflow: hidden;
 }
 
+.pre {
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+
+.code {
+  font-size: 15px;
+  width: 100%;;
+}
+
 /*медиа запросы*/
 @media (max-width: 1024px) {
   .navbar__info {
@@ -431,20 +499,40 @@ li {
 
   .aside {
     padding-top: 0;
+    padding-right: 30px;
+    width: 100%;
   }
 
   .main__container {
     flex-direction: column-reverse;
   }
 
+  .aside__container {
+    display: flex;
+  }
+
   .information__container {
     padding-bottom: 0;
   }
-  
+
   .my__photo {
     justify-content: center;
   }
 
+  .project {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 645px) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 414px) {
