@@ -326,6 +326,11 @@ li {
   display: flex;
   gap: 24px;
   position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project:has(.project__link:hover) {
+  transform: scale(1.03);
 }
 
 .projects__container {
