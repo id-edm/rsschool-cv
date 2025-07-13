@@ -1,0 +1,546 @@
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(./assets/fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Ubuntu-Regular;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #ccbe5c);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  max-width: 100%;
+  background: rgb(184, 190, 194);
+  box-shadow: 10px 20px 14px 3px rgb(0 0 0 / 50%);
+}
+
+/*хедер*/
+.header {
+  justify-content: space-between;
+  padding: 20px 20px;
+  display: flex;
+  max-width: 100%;
+  background-color: rgb(68, 95, 114);
+  color: #babbc4;
+  font-size: 40px;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: rgb(204, 190, 92);
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*навбар*/
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__info {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar__item {
+  position: relative;
+}
+
+.main__container {
+  display: flex;
+  gap: 30px
+}
+
+.aside {
+  display: flex;
+  padding: 30px;
+  padding-right: 0;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* отступ снизу */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 0;
+  background: rgb(204, 190, 92);
+  height: 3px;
+  transition: 0.35s, opacity 0.35s;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+/* анимация подчеркивания */
+.underline:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .navbar__item:hover {
+    color: rgb(204, 190, 92);
+  }
+}
+
+@media (hover: none) {
+  .underline::after {
+    display: none;
+  }
+
+  .navbar__item:active {
+    color: rgb(204, 190, 92);
+  }
+}
+
+/*информация и профиль*/
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+}
+
+.information__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #488da9;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 60px
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my__name {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: rgb(204, 190, 92);
+}
+
+.my__profession {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.my__photo {
+  display: flex;
+  display: block;
+  overflow: visible;
+  width: 70%
+}
+
+.photo {
+  filter: grayscale(20%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  max-width: 95%;
+  border: 5px solid #ccbe5c;
+}
+
+.about__me {
+  letter-spacing: 1.15px;
+  font-weight: 500;
+}
+
+.about__me-text {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.info {
+  padding: 0 30px;
+}
+
+/*контакты*/
+.my__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*образование*/
+.education {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5
+}
+
+.education_inner {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.education_inner:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.margin-icon {
+  margin-bottom: 15px;
+}
+
+/*иконки контактов*/
+.image_contact {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.my__contact_list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8px;
+  gap: 10px
+}
+
+.my__contact-link:hover .image_contact {
+  transform: scale(1.25);
+}
+
+.my__contact-link {
+  transition: transform 0.1s;
+}
+
+.my__contact-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/*скилы*/
+.skils__lists {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  gap: 15px;
+}
+
+.skils__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skils__img {
+  display: block;
+}
+
+/*знание языков*/
+.lang {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5
+}
+
+.text__contact {
+  font-size: 18px;
+}
+
+/*проекты*/
+.project {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project:has(.project__link:hover) {
+  transform: scale(1.03);
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects__image {
+  position: relative;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+}
+
+.project__link {
+  background-color: #ccbe5c;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: auto;
+  transition: transform 0.15s;
+}
+
+.project__link:hover {
+  color: #488da9;
+  background-color: #eef1f3;
+}
+
+.project__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  display: block;
+  max-width: 350px;
+}
+
+/*футер*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  font-weight: bold;
+  max-width: 100%;
+  background-color: rgb(68, 95, 114);
+}
+
+.footer__icon {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/*бургер меню*/
+.burger__btn {
+  position: relative;
+  display: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+  width: 45px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.burger__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(204, 190, 92);
+}
+
+.burger__btn::before,
+.burger__btn::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(204, 190, 92);
+  left: 0;
+  transform: translateY(50%);
+  width: 100%;
+  height: 4px;
+  transition: transform 0.25s ease-in-out, top 0.25s ease-in-out, bottom 0.25s ease-in-out;
+}
+
+.burger__btn::before {
+  top: -2px;
+}
+
+.burger__btn::after {
+  bottom: -2px;
+}
+
+.burger--transform .burger__line {
+  opacity: 0;
+}
+
+.burger--transform::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.burger--transform::after {
+  transform: rotate(-45deg);
+  top: 50%;
+  bottom: auto;
+}
+
+.scroll--stop {
+  overflow: hidden;
+}
+
+.pre {
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+
+.code {
+  font-size: 15px;
+  width: 100%;;
+}
+
+/*медиа запросы*/
+@media (max-width: 1024px) {
+  .navbar__info {
+    background-color: rgb(68, 95, 114);
+    flex-direction: column;
+    gap: 10px 0;
+    padding: 20px 20px;
+    position: fixed;
+    right: 0;
+    top: 90px;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navbar__info.burger--open {
+    transform: translateX(0);
+  }
+
+  .burger__btn {
+    display: flex;
+  }
+
+  .navbar__item {
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside {
+    padding-top: 0;
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  .main__container {
+    flex-direction: column-reverse;
+  }
+
+  .aside__container {
+    display: flex;
+  }
+
+  .information__container {
+    padding-bottom: 0;
+  }
+
+  .my__photo {
+    justify-content: center;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 645px) {
+  .project {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 414px) {
+  .photo {
+    max-width: 95%;
+  }
+}
