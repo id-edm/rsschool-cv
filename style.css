@@ -60,7 +60,6 @@ li {
   padding: 20px 20px;
   display: flex;
   max-width: 100%;
-  background-color: rgb(68, 95, 114);
   color: #babbc4;
   font-size: 40px;
   align-items: center;
@@ -68,7 +67,7 @@ li {
 }
 
 .logo {
-  color: rgb(204, 190, 92);
+  color: rgb(255, 255, 255);
   font-size: 50px;
   line-height: 50px;
   font-weight: bold;
@@ -122,7 +121,7 @@ li {
   margin: 0 auto;
   display: block;
   width: 0;
-  background: rgb(204, 190, 92);
+  background: rgb(255, 255, 255);
   height: 3px;
   transition: 0.35s, opacity 0.35s;
   border-radius: 100px;
@@ -142,7 +141,7 @@ li {
   }
 
   .navbar__item:hover {
-    color: rgb(204, 190, 92);
+    color: rgb(255, 255, 255)
   }
 }
 
